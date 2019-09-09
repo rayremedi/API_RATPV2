@@ -5,6 +5,24 @@
   font-family: "Poppins", sans-serif;
 }
 
+.here {
+  animation: light 1s infinite;
+}
+
+@keyframes light {
+  0% {
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  50% {
+    opacity: 1;
+    transition: all 1s ease;
+  }
+  100% {
+    opacity: 0;
+    transition: all 1s ease;
+  }
+}
 main {
   height: 100vh;
   padding-top: 3rem;
@@ -71,6 +89,7 @@ main {
 }
 .container-train h5 {
   margin-bottom: 0.5rem;
+  margin-right: 1.8rem;
 }
 .container-train p {
   color: #ff9b61;
@@ -99,7 +118,6 @@ main {
 .result-footer {
   height: 4rem;
   width: 100%;
-  background-color: #3abe92;
 }
 
 #destinationResult {
@@ -117,11 +135,15 @@ main {
 #time {
   position: absolute;
   left: 0;
+  font-size: 14px;
+  width: 15em;
 }
 
 #time2 {
   position: absolute;
   right: 0;
+  font-size: 14px;
+  width: 15em;
 }
 
 /*# sourceMappingURL=style.css.map */

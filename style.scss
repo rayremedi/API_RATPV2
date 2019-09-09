@@ -5,6 +5,27 @@
     font-family: "Poppins", sans-serif;
   }
   
+  .here {
+    animation: light 1s infinite;
+  }
+
+  @keyframes light {
+    0% {
+      opacity: 0;
+      transition: all 1s ease;
+    }
+  
+    50% {
+      opacity: 1;
+      transition: all 1s ease;
+    }
+    100% {
+      opacity: 0;
+      transition: all 1s ease;
+    }
+  }
+
+
   main {
     height: 100vh;
     padding-top: 3rem;
@@ -53,6 +74,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 80vw;
+    
   }
   
   .container-name {
@@ -70,6 +92,7 @@
     margin-bottom: 2rem;
     h5 {
       margin-bottom: 0.5rem;
+      margin-right: 1.80rem;
     }
     p {
       color: rgb(255, 155, 97);
@@ -99,7 +122,6 @@
   .result-footer {
     height: 4rem;
     width: 100%;
-    background-color: rgb(58, 190, 146)
   }
   
   #destinationResult{
@@ -117,8 +139,15 @@ font-size: 22px;
       #time{
         position: absolute;
         left: 0;
+        font-size: 14px;
+        width: 15em;
       }
       #time2{
         position: absolute;
         right: 0;
+        font-size: 14px;
+        width: 15em;
+
       }
+
+      
